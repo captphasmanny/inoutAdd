@@ -7,8 +7,23 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int readNumber()
+{
+    int x{};
+    std::cout << "Please enter a number: ";
+    std::cin >>x;
+    
+    return x;
+}
+
+void writeAnswer(int y)
+{
+    std::cout << y << '\n';
+}
+
+int main()
+{
+    int a{readNumber()};
+    int b{readNumber()};
+    writeAnswer(a+b);
 }
